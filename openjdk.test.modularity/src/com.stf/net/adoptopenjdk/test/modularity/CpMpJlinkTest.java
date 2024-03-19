@@ -55,6 +55,7 @@ public class CpMpJlinkTest implements StfPluginInterface {
 	}
 		
 	public void setUp(StfCoreExtension test) throws StfException {
+		System.setProperty("OPENJ9_JAVA_OPTIONS", "-Xint");
 	}
 
 	public void execute(StfCoreExtension test) throws StfException {
